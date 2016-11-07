@@ -27,26 +27,15 @@ export default class HomeScreen extends React.Component {
           contentContainerStyle={styles.contentContainer}>
 
           <View style={styles.welcomeContainer}>
-            <Image
-              source={require('../assets/images/exponent-wordmark.png')}
-              style={styles.welcomeImage}
-            />
+            <Text style={styles.headerText}>
+              FUCK ALL
+            </Text>
           </View>
 
 
           <View style={styles.getStartedContainer}>
-            {this._maybeRenderDevelopmentModeWarning()}
-
             <Text style={styles.getStartedText}>
-              Get started by opening
-            </Text>
-
-            <View style={[styles.codeHighlightContainer, styles.homeScreenFilename]}>
-              <MonoText style={styles.codeHighlightText}>screens/HomeScreen.js</MonoText>
-            </View>
-
-            <Text style={styles.getStartedText}>
-              Hello Allison! This is Kacy!
+              Finally Starting to Make Sense!
             </Text>
           </View>
 
@@ -59,15 +48,6 @@ export default class HomeScreen extends React.Component {
           </View>
         </ScrollView>
 
-        <View style={styles.tabBarInfoContainer}>
-          <Text style={styles.tabBarInfoText}>
-            This is a tab bar. You can edit it in:
-          </Text>
-
-          <View style={[styles.codeHighlightContainer, styles.navigationFilename]}>
-            <MonoText style={styles.codeHighlightText}>navigation/RootNavigation.js</MonoText>
-          </View>
-        </View>
       </View>
     );
   }
@@ -107,7 +87,7 @@ export default class HomeScreen extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'white',
   },
   developmentModeText: {
     marginBottom: 20,
@@ -145,7 +125,7 @@ const styles = StyleSheet.create({
   },
   getStartedText: {
     fontSize: 17,
-    color: 'rgba(96,100,109, 1)',
+    color: 'red',
     lineHeight: 23,
     textAlign: 'center',
   },
@@ -168,6 +148,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#fbfbfb',
     paddingVertical: 20,
+  },
+  headerText: {
+    fontSize: 35,
+    textAlign: 'left'
   },
   tabBarInfoText: {
     fontSize: 17,
